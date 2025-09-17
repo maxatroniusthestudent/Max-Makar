@@ -200,43 +200,6 @@ button {
   bottom: 0;
 }
 
-.offcanvas {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.2s ease;
-}
-.offcanvas__panel {
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: min(86vw, 360px);
-  background: var(--c-bg);
-  padding: 16px;
-  border-left: 1px solid var(--c-border);
-  transform: translateX(100%);
-  transition: transform 0.25s ease;
-  display: grid;
-  gap: 12px;
-}
-.header__checkbox:checked ~ .offcanvas {
-  opacity: 1;
-  visibility: visible;
-}
-.header__checkbox:checked ~ .offcanvas .offcanvas__panel {
-  transform: translateX(0);
-}
-.offcanvas__close {
-  justify-self: end;
-}
-.offcanvas .nav__list {
-  display: grid;
-  gap: 6px;
-}
-
 .hero {
   background: #141a22;
   isolation: isolate;
